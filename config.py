@@ -1,6 +1,6 @@
-customhost = "postgress-1.cjy22aga8u9r.us-east-1.rds.amazonaws.com"
+customhost = "employee-db.cjy22aga8u9r.us-east-1.rds.amazonaws.com"
 customuser = "postgres"
 custompass = "password1"
-customdb = "employee"
+customdb = "employee-db"
 custombucket = "test1"
 customregion = "ap-south-1"
