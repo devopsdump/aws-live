@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 import psycopg2
-import connect
 import os
 import boto3
 from config import *
@@ -15,9 +14,8 @@ db_conn = psycopg2.connect(
     port=5432,
     user=customuser,
     password=custompass,
-    db=customdb
+    db=customdb)
 
-)
 output = {}
 table = 'employee'
 
