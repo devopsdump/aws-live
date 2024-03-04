@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from psycopg2 import connections
+from psycopg2 import connect
 import os
 import boto3
 from config import *
@@ -9,7 +9,7 @@ app = Flask(__name__)
 bucket = custombucket
 region = customregion
 
-db_conn = connections.Connection(
+db_conn = psycopg2.connect(
     host=customhost,
     port=5432,
     user=customuser,
