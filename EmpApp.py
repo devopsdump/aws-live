@@ -9,12 +9,7 @@ app = Flask(__name__)
 bucket = custombucket
 region = customregion
 
-conn = psycopg2.connect(
-    host=customhost,
-    port=5432,
-    user=customuser,
-    password=custompass,
-    db=customdb)
+conn = psycopg2.connect(dbname=customdb,user=customuser,  password=custompass, host=customhost, port='5432', sslmode='require')
 
 output = {}
 table = 'employee'
