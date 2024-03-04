@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request
-from psycopg2 import connect
+from psycopg2 
+import psycopg2
+import connect
 import os
 import boto3
 from config import *
