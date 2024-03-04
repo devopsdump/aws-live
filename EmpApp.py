@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from pymysql import connections
+from psycopg2 import connections
 import os
 import boto3
 from config import *
@@ -11,7 +11,7 @@ region = customregion
 
 db_conn = connections.Connection(
     host=customhost,
-    port=3306,
+    port=5432,
     user=customuser,
     password=custompass,
     db=customdb
